@@ -1,10 +1,5 @@
-*,
-*:before,
-*:after {
-    box-sizing: border-box;
-}
-
 body {
+    display: grid;
     padding-block: 2rem;
     font-size: 0.938rem;
     min-height: 50vh;
@@ -14,16 +9,67 @@ body {
     font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
-
-header{
-    display: flex;
-    justify-content: space-between;
+.one,
+.two,
+.three,
+.four,
+.five,
+.six{
+    border-radius: 5px;
+    background-color: #FFF;
 }
-.top__link{
-    display: flex;
-    justify-content: center;
-    gap: 0.5rem;
+.container{
+    display: grid;
+    margin: 0 auto;
+    grid-template-areas: 'a' 'b' 'c' 'd' 'e' 'f';
+    gap: 2rem;
+}
+
+.one{
+    grid-area: a;
+    border-style: solid;
+}
+
+.two{
+    grid-area: b;
+}
+
+.three{
+    grid-area: c;
+}
+
+.four{
+    grid-area: d;
+}
+
+.five{
+    grid-area: e;
+}
+
+.six{
+    grid-area: f;
 }
 
 
 
+
+
+
+
+
+/*Media query*/
+
+
+@media screen and (min-width: 800px) {
+    .container{
+        grid-template-areas: "a b" "c d" "e f";
+    }
+}
+
+  
+ 
+@media screen and (min-width: 1200px) {
+    .container {
+        grid-template-areas:"a b c" "d e f";
+    }
+}
