@@ -1,0 +1,29 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    padding-block: 2rem;
+    font-size: 0.938rem;
+    min-height: 50vh;
+    line-height: 1.5;
+    font-weight: 400;
+    background-color: #ECF2F8;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+.top__link{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+
+
